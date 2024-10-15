@@ -1,0 +1,2 @@
+include ':godotnotification'
+rootProject.name = "Godot Android Notifications"
