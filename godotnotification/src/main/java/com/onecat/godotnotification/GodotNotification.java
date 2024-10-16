@@ -64,7 +64,7 @@ public class GodotNotification extends GodotPlugin {
         calendar.add(Calendar.SECOND, interval);
 
         AlarmManager am = (AlarmManager)getActivity().getSystemService(getActivity().ALARM_SERVICE);
-        am.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), sender);
+        am.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), sender);
     }
 
     @UsedByGodot
