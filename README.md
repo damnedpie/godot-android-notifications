@@ -1,7 +1,7 @@
 # Godot Android Notifications for 3.6
 [![Godot](https://img.shields.io/badge/Godot%20Engine-3.6-blue?style=for-the-badge&logo=godotengine&logoSize=auto)](https://godotengine.org/)
-[![GitHub License](https://img.shields.io/github/license/damnedpie/godot-android-notifications?style=for-the-badge)](#)
-[![GitHub Repo stars](https://img.shields.io/github/stars/damnedpie/godot-android-notifications?style=for-the-badge&logo=github&logoSize=auto&color=%23FFD700)](#)
+[![GitHub License](https://img.shields.io/github/license/damnedpie/godot-android-notifications?style=for-the-badge)](https://github.com/damnedpie/godot-android-notifications/blob/main/LICENSE)
+[![GitHub Repo stars](https://img.shields.io/github/stars/damnedpie/godot-android-notifications?style=for-the-badge&logo=github&logoSize=auto&color=%23FFD700)](https://github.com/damnedpie/godot-android-notifications/stargazers)
 
 Godot Android Notifications plugin. Built on Godot 3.6 AAR.
 
@@ -37,14 +37,6 @@ Create a file named "colors.xml" in your project at ``android/build/res/values``
  <color name="notification_color">#e45d0a</color>
 </resources>
 ```
-### Methods
+### Usage
 
-Plugin only has two methods to it:
-
-#### scheduleNotification(message:String, header:String, intervalSeconds:int, tag:int)
-
-Creates a notification to be shown after "intervalSeconds" with a given tag. If you want to create few parallel notifications, make sure that you use different tags. Tag can be any integer number.
-
-#### cancelNotification(tag:int)
-
-Cancels a notification with given tag. It's safe to cancel an unexistent notification (nothing will happen).
+Please inspect `godot_android_notifications.gd`, it's well documented.

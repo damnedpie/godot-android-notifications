@@ -1,7 +1,9 @@
 apply plugin: 'com.android.library'
 
-ext.pluginVersionCode = 1
+ext.pluginVersionCode = 2
 ext.pluginVersionName = "3.6"
+ext.zipName = "godot-notifications"
+ext.godotVersion = "3.6"
 
 android {
     compileSdk 34
@@ -26,8 +28,8 @@ android {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.0'
-    implementation 'androidx.work:work-runtime:2.9.1'
-    compileOnly fileTree(dir: 'libs', includes: ['godot-lib*.aar'])
+    implementation 'androidx.work:work-runtime:2.10.2'
+    implementation 'org.godotengine:godot:3.6.0.stable'
 }
 
 tasks.register('buildIntoRelease', Copy) {
@@ -36,4 +38,16 @@ tasks.register('buildIntoRelease', Copy) {
     from([buildDir.absolutePath, 'outputs', 'aar'].join(File.separator))
     include("GodotNotification.${pluginVersionName}.release.aar")
     into([rootDir.absolutePath, 'release'].join(File.separator))
+}
+
+tasks.register('buildIntoReleaseAndPrepareForGithub', Zip) {
+    group = "build"
+    dependsOn tasks.buildIntoRelease
+    from([rootDir.absolutePath, 'release'].join(File.separator))
+    include("*.gd", "*.gdap", "*.aar")
+    archiveFileName = "${zipName}-${godotVersion}.zip"
+    destinationDirectory = file([rootDir.absolutePath, 'release'].join(File.separator))
+    def metaTxt = new File([rootDir.absolutePath, 'release', "github-meta.txt"].join(File.separator))
+    metaTxt.text = "Godot ${pluginVersionName}, rev.${pluginVersionCode}"
+    metaTxt.text += "\nGD${godotVersion}rev${pluginVersionCode}"
 }
