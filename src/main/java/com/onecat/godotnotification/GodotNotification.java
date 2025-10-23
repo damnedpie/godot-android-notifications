@@ -14,8 +14,6 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 
-import androidx.annotation.NonNull;
-
 import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Set;
@@ -75,13 +73,11 @@ public class GodotNotification extends GodotPlugin {
         super.onMainDestroy();
     }
 
-    @NonNull
     @Override
     public String getPluginName() {
         return "GodotNotification";
     }
 
-    @NonNull
     @Override
     public Set<SignalInfo> getPluginSignals() {
         Set<SignalInfo> signalInfoSet = new HashSet<>();

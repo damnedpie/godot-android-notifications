@@ -1,9 +1,9 @@
 # Godot Android Notifications for 3.6
-[![Godot](https://img.shields.io/badge/Godot%20Engine-3.6-blue?style=for-the-badge&logo=godotengine&logoSize=auto)](https://godotengine.org/)
+[![Godot](https://img.shields.io/badge/Godot%20Engine-3.6.2-blue?style=for-the-badge&logo=godotengine&logoSize=auto)](https://godotengine.org/)
 [![GitHub License](https://img.shields.io/github/license/damnedpie/godot-android-notifications?style=for-the-badge)](https://github.com/damnedpie/godot-android-notifications/blob/main/LICENSE)
 [![GitHub Repo stars](https://img.shields.io/github/stars/damnedpie/godot-android-notifications?style=for-the-badge&logo=github&logoSize=auto&color=%23FFD700)](https://github.com/damnedpie/godot-android-notifications/stargazers)
 
-Godot Android Notifications plugin. Built on Godot 3.6 AAR.
+Godot Android Notifications plugin. Built on Godot 3.6.2 dependency.
 
 ## Setup
 
