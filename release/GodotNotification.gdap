@@ -2,7 +2,7 @@
 
 name="GodotNotification"
 binary_type="local"
-binary="GodotNotification.3.6.release.aar"
+binary="GodotNotification.3.6.2.release.aar"
 
 [dependencies]
 

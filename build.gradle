@@ -2,7 +2,7 @@ plugins {
     id("com.android.library")
 }
 
-ext.pluginVersionCode = 1
+ext.pluginVersionCode = 2
 ext.pluginVersionName = "3.6.2"
 ext.zipName = "godot-notifications"
 ext.godotVersion = "3.6.2"
