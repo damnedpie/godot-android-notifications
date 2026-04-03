@@ -1,0 +1,12 @@
+[config]
+
+name="GodotNotification"
+binary_type="local"
+binary="GodotNotification.2.11.2.release.aar"
+
+[dependencies]
+
+remote=[
+	"androidx.work:work-runtime:2.11.2",
+	]
+custom_maven_repos=[]

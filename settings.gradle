@@ -17,4 +17,6 @@ dependencyResolutionManagement {
     }
 }
 
+include('godot3', 'godot4')
+
 rootProject.name = "Godot Android Notifications"

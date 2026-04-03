@@ -1,15 +1,16 @@
-# Godot Android Notifications for 3.6
+# Godot Android Notifications
 [![Godot](https://img.shields.io/badge/Godot%20Engine-3.6.2-blue?style=for-the-badge&logo=godotengine&logoSize=auto)](https://godotengine.org/)
+[![Godot](https://img.shields.io/badge/Godot%20Engine-4.6.1-blue?style=for-the-badge&logo=godotengine&logoSize=auto)](https://godotengine.org/)
 [![GitHub License](https://img.shields.io/github/license/damnedpie/godot-android-notifications?style=for-the-badge)](https://github.com/damnedpie/godot-android-notifications/blob/main/LICENSE)
 [![GitHub Repo stars](https://img.shields.io/github/stars/damnedpie/godot-android-notifications?style=for-the-badge&logo=github&logoSize=auto&color=%23FFD700)](https://github.com/damnedpie/godot-android-notifications/stargazers)
 
-Godot Android Notifications plugin. Built on Godot 3.6.2 dependency.
+Godot Android Notifications plugin. Built on Godot 3.6.2 / Godot 4.6.1 dependency.
 
 ## Setup
 
 ### Project integration
 
-Grab the``GodotNotification`` plugin binary (.aar) and config (.gdap) from the releases page and put both into ``res://android/plugins``. For easy start, you can also use my ``godot_android_notifications.gd`` script.
+Grab the``GodotNotification`` plugin binary (.aar) and config (.gdap) from `godot3` or `godot4` folder and put both into ``res://android/plugins``. For easy start, you can also use my ``godot_android_notifications.gd`` script.
 
 In order to use your game's icons and an icon color of your choice, see steps below.
 
